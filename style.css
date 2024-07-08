@@ -8,7 +8,7 @@
 }
 
 .logo {
-  font-size: 24px;
+  font-size: 20px;
   text-transform: uppercase;
   letter-spacing: 4px;
   color: #d4a373;
@@ -19,7 +19,7 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 8vh;
+  height: 10vh;
   background-color: #faedcd;
 }
 
@@ -219,7 +219,7 @@ ul li a {
 /* ------------- Avaliações -----------------*/
 
 .divisions {
-  width: 90vw;
+  width: 80vw;
   height: 5px;
   border-radius: 5px;
   background-color: #d4a373;
@@ -270,7 +270,7 @@ ul li a {
 /* ------------------- Formulario ----------------------*/
 .form {
   background-color: #fefae0;
-  height: 80vh;
+  height: 65vh;
   width: 280px;
   display: flex;
   flex-direction: column;
@@ -279,6 +279,7 @@ ul li a {
 
 .formulario {
   background-color: #fefae0;
+  height: 85vh;
 }
 
 .formulario h1 {
@@ -322,13 +323,13 @@ ul li a {
   margin-bottom: 20.5px;
 }
 
-#submit {
+.btn-sub {
   width: 140px;
-  height: 40px;
+  min-height: 40px;
   border-radius: 50px;
   border: none;
   font-weight: 900;
-  font-size: 1.1em;
+  font-size: 16px;
   margin-left: auto;
   margin-right: auto;
   background-color: #ccd5ae;
@@ -395,4 +396,65 @@ ul li a {
   border-radius: 10px;
   border: none;
   padding: 10px;
+}
+
+footer {
+  width: 100%;
+  position: absolute;
+  bottom: 100;
+  background-color: #faedcd;
+  height: 380px;
+  padding: 40px 30px;
+}
+
+.container-contato {
+  width: 280px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#location-icon {
+  width: 24px;
+  height: 30px;
+}
+
+.contato {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+
+.contato img {
+  width: 30px;
+  margin-right: 12px;
+}
+
+.contato p {
+  font-weight: 600;
+  font-size: 1.12em;
+}
+
+#creditos {
+  text-align: center;
+  font-size: 1.06em;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.contato-footer img {
+  width: 36px;
+}
+
+.contato-footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding-bottom: 20px;
 }

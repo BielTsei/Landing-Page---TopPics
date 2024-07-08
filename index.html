@@ -22,16 +22,16 @@
           <div class="line3"></div>
         </div>
         <ul class="nav-list">
-          <li><a href="/">Serviços</a></li>
-          <li><a href="/">Avaliações</a></li>
-          <li><a href="/">Contato</a></li>
+          <li><a href="#servicos">Serviços</a></li>
+          <li><a href="#avaliacoes">Avaliações</a></li>
+          <li><a href="#formulario">Contato</a></li>
         </ul>
       </nav>
     </header>
     <div class="home">
       <h1>Luz, câmera, emoção <br />eternizando momentos</h1>
     </div>
-    <div class="servicos">
+    <div class="servicos" id="servicos">
       <h1>Serviços</h1>
       <div id="servicos-card1">
         <p class="s-title-card">Fotografia de Família</p>
@@ -75,7 +75,7 @@
       </div>
       <div class="divisions"></div>
     </div>
-    <div class="avaliacoes">
+    <div class="avaliacoes" id="avaliacoes">
       <div class="av1">
         <img src="./assets/av1.png" alt="" />
         <h1>Sarah Santos</h1>
@@ -118,7 +118,7 @@
       </div>
       <div class="divisions"></div>
     </div>
-    <div class="formulario">
+    <div class="formulario" id="formulario">
       <h1>Entre em contato</h1>
       <div class="form">
         <form class="input" action="">
@@ -152,10 +152,39 @@
           <label for="">Mensagem</label>
           <textarea row="10" name="mensagem" id="mensagem"></textarea>
         </div>
-        <button id="submit" type="submit">Enviar</button>
+        <button class="btn-sub" id="submit" type="submit">Enviar</button>
       </div>
     </div>
-    <footer></footer>
+    <footer>
+      <div class="container-contato">
+        <div class="contato">
+          <img src="./assets/whatsapp.png" alt="" />
+          <p>(11) 98765-4321</p>
+        </div>
+        <div class="contato">
+          <img src="./assets/instagram.png" alt="" />
+          <p>@top_pics</p>
+        </div>
+        <div class="contato">
+          <img src="./assets/email.png" alt="" />
+          <p>topics@contato.com.br</p>
+        </div>
+        <div class="contato">
+          <img id="location-icon" src="./assets/location.png" alt="" />
+          <p>
+            Rua da Lente, 123,<br />
+            Cidade das Capturas,<br />
+            SP CEP: 01234-567
+          </p>
+        </div>
+      </div>
+      <div class="divisions"></div>
+      <p id="creditos">&copy;Desenvolvido por Gabriel Tsei</p>
+      <div class="contato-footer">
+        <img src="./assets/github.png" alt="" />
+        <img src="./assets/linkedin.png" alt="" />
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>
