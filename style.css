@@ -135,6 +135,7 @@ ul li a {
   justify-content: center;
   align-items: center;
   gap: 24px;
+  padding-bottom: 26px;
 }
 
 .servicos h1 {
@@ -213,4 +214,185 @@ ul li a {
   width: 200px;
   font-size: 1.05em;
   padding-left: 20px;
+}
+
+/* ------------- Avaliações -----------------*/
+
+.divisions {
+  width: 90vw;
+  height: 5px;
+  border-radius: 5px;
+  background-color: #d4a373;
+  margin: auto;
+}
+
+.avaliacoes {
+  background-color: #fefae0;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+.av1 {
+  width: 290px;
+  height: 370px;
+  background-color: #ccd5ae;
+  border-radius: 15px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 14px;
+  padding-right: 14px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+}
+
+.av1 h1 {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.av1 img {
+  width: 120px;
+  margin-bottom: 16px;
+}
+
+.av1 p {
+  width: 260px;
+  margin-top: 16px;
+  font-size: 1em;
+}
+
+/* ------------------- Formulario ----------------------*/
+.form {
+  background-color: #fefae0;
+  height: 80vh;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+.formulario {
+  background-color: #fefae0;
+}
+
+.formulario h1 {
+  font-size: 1.75em;
+  margin-bottom: 36px;
+  padding-top: 34px;
+  text-align: center;
+}
+
+.form label {
+  font-size: 1.2em;
+  margin-right: 6px;
+}
+
+.form p {
+  font-size: 1.25em;
+  font-weight: 700;
+  text-align: left;
+}
+
+#nome,
+#email,
+#phone {
+  width: 100%;
+  height: 26px;
+  background-color: #fefae0;
+  border: none;
+  padding-left: 8px;
+}
+
+.input input {
+  display: flex;
+}
+
+.input {
+  border-bottom: 3.5px solid #ccd5ae;
+  width: 280px;
+  outline: none;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20.5px;
+}
+
+#submit {
+  width: 140px;
+  height: 40px;
+  border-radius: 50px;
+  border: none;
+  font-weight: 900;
+  font-size: 1.1em;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #ccd5ae;
+}
+
+.container-buttons {
+  margin-top: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 280px;
+}
+
+.container-buttons div {
+  margin: 0px 10px 0 10px;
+}
+.container-buttons div label {
+  cursor: pointer;
+}
+.container-buttons div label input[type="checkbox"] {
+  display: none;
+}
+
+.container-buttons div label span {
+  width: 120px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ccd5ae;
+  color: black;
+  border-radius: 30px;
+  font-size: 0.9em;
+  font-weight: 700;
+  transition: 0.5s;
+  user-select: none;
+  overflow: hidden;
+}
+
+/* .container-buttons div label span::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50%;
+  background-color: #e9edc969;
+} */
+
+.container-buttons div label input[type="checkbox"]:checked ~ span {
+  background: #d4a373;
+}
+
+.message {
+  width: 280px;
+}
+
+.message textarea {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  height: 100px;
+  width: 280px;
+  background-color: #e9edc9;
+  border-radius: 10px;
+  border: none;
+  padding: 10px;
 }
