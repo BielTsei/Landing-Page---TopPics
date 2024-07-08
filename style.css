@@ -126,6 +126,12 @@ ul li a {
   color: #faf8ec;
 }
 
+.container-servicos {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .servicos {
   background-color: #fefae0;
   background-attachment: fixed;
@@ -279,7 +285,7 @@ ul li a {
 
 .formulario {
   background-color: #fefae0;
-  height: 85vh;
+  height: 650px;
 }
 
 .formulario h1 {
@@ -369,16 +375,6 @@ ul li a {
   overflow: hidden;
 }
 
-/* .container-buttons div label span::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 50%;
-  background-color: #e9edc969;
-} */
-
 .container-buttons div label input[type="checkbox"]:checked ~ span {
   background: #d4a373;
 }
@@ -457,4 +453,83 @@ footer {
   justify-content: center;
   gap: 16px;
   padding-bottom: 20px;
+}
+
+@media (min-width: 1080px) {
+  .home {
+    width: 80vh;
+    line-height: 44px;
+  }
+  .home h1 {
+    font-size: 1.9em;
+  }
+
+  #servicos-card1 {
+    background-image: url(./assets/family-desktop.png);
+    width: 380px;
+    height: 340px;
+  }
+  #servicos-card2 {
+    background-image: url(./assets/pet-desktop.png);
+    width: 380px;
+    height: 340px;
+  }
+  #servicos-card3 {
+    background-image: url(./assets/pessoal-desktop.png);
+    width: 380px;
+    height: 340px;
+  }
+  #servicos-card4 {
+    background-image: url(./assets/comercial-desktop.png);
+    width: 380px;
+    height: 340px;
+  }
+
+  .s-para-card {
+    width: 280px;
+    font-size: 1.15em;
+  }
+
+  .container-servicos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 22px;
+  }
+
+  .container-avs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 36px;
+  }
+  .form {
+    width: 480px;
+  }
+
+  .input {
+    width: 480px;
+  }
+
+  .container-buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 480px;
+  }
+
+  .message textarea {
+    width: 480px;
+    height: 100px;
+  }
+
+  footer {
+    height: 260px;
+  }
+
+  .container-contato {
+    justify-content: space-evenly;
+    flex-direction: row;
+    width: 90%;
+  }
 }
